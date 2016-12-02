@@ -9,7 +9,7 @@ set -x
 #--- Variables
 date=$( date +%Y_%m_%d_%H_%M )
 userMysql="mysqldump_backup"
-passwordMysql="f0a14d63c0be7ff2ff8ad3ce6cf1c11a"
+passwordMysql=""
 cheminBackup="/home/serieall/backup/mysql"
 
 #--- Backup
