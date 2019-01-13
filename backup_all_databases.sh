@@ -8,7 +8,7 @@ set -x
 ############################################################
 #--- Variables
 date=$( date +%Y_%m_%d_%H_%M )
-user_mysql="mysqldump_backup"
+user_mysql="root"
 script_directory=$(dirname $0)
 password_mysql=$(cat ${script_directory}/credential_mysql.txt)
 
