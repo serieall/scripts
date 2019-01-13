@@ -12,7 +12,9 @@ user_mysql="mysqldump_backup"
 script_directory=$(dirname $0)
 password_mysql=$(cat ${script_directory}/credential_mysql.txt)
 
-backup_path="/home/serieall/backup/mysql"
+backup_path="/var/backup_serieall"
+[ -d ${backup_path} ] || mkdir ${backup_path}
+
 
 #--- Backup
 echo "Début du backup"
