@@ -18,7 +18,7 @@ backup_path="/var/backup_serieall"
 
 #--- Backup
 echo "Début du backup"
-mysqldump -u${user_mysql} -p${password_mysql} --all-databases --events > ${backup_path}/all_databases_$date.sql
+mysqldump -u${user_mysql} -p${password_mysql} --all-databases > ${backup_path}/all_databases_$date.sql
 # Si la commande s'est bien déroulée, on exécute la suite
 if [[ $? -eq 0 ]]; then
 	echo "Compression du fichier"
